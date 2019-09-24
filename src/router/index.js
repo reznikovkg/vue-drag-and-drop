@@ -1,16 +1,17 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import AnimalsList from '@/components/AnimalsList';
 
 Vue.use(Router);
 
 export default new Router({
     mode: 'history',
+    base: '/vue-drag-and-drop/',
     routes: [
         {
             path: '/',
-            name: 'HelloWorld',
-            component: HelloWorld
+            name: 'AnimalsList',
+            component: AnimalsList
         }
     ]
 })
